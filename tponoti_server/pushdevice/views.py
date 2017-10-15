@@ -14,7 +14,7 @@ def register(request):
         return JsonResponse({"1": "Device is already registered"})
     else:
         Devices.objects.create(email=email, token = token)
-        return HttpResponse({"1": "Device registered successfully"})
+        return JsonResponse({"1": "Device registered successfully"})
 
 def get_all_tokens():
     persons = list(Devices.objects.all())
