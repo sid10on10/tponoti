@@ -1,0 +1,4 @@
+*.sqlite3
+*.py[cox]
+tponoti_server/login.config
+
