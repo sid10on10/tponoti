@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from .models import Devices
 # Create your views here.
 @csrf_exempt
@@ -10,11 +10,11 @@ def register(request):
     email = request.POST['email']
     token = request.POST['token']
     person = Devices.objects.filter(email=email)
-    if not person is None:
-        return HttpResponse("1")
+    if person:
+        return JsonResponse({"1": "Device is already registered"})
     else:
         Devices.objects.create(email=email, token = token)
-        return HttpResponse("2")
+        return HttpResponse({"1": "Device registered successfully"})
 
 def get_all_tokens():
     persons = list(Devices.objects.all())
