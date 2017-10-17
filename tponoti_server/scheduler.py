@@ -27,7 +27,11 @@ def get_all_tokens():
 
 def send_push(tokens):
     push_service = FCMNotification(api_key=FIREBASE_API_KEY)
-    notis = scraper.return_list()
+    notis = []
+    try:
+        notis = scraper.return_list()
+    except:
+        return []
     if notis:
         for i in notis:
             message_title = "Update Notification"
