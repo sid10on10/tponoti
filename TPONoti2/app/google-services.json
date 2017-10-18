@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "697481168608",
+    "firebase_url": "https://tponoti.firebaseio.com",
+    "project_id": "tponoti",
+    "storage_bucket": "tponoti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697481168608:android:88ab925915bf8fe5",
+        "android_client_info": {
+          "package_name": "me.zeroonehacker.www.tponoti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697481168608-tlo9pgq0dngku8ph5g3ch9f2uv8te1vl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmo0VTxzHWy7h6hCK2r53s4WO8QQ33YiE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
