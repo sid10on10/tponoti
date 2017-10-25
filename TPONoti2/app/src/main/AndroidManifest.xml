@@ -41,6 +41,10 @@
             android:name=".MyFirebaseMessagingService"
             android:enabled="true"
             android:exported="true"></service>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ad4676c224c33899338f211324b39f567b54e8bf" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
